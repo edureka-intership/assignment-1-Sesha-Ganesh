@@ -4,80 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment1</title>
+    <title>Search Page</title>
+    <link rel="icon" href="./Images/breakfast.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Breakfast Places in Mumbai</h1>
-    <div class="main-section">
-        <section class="left-section">
-            <h3>Filters</h3>
+    <div class="header">Breakfast Places in Mumbai</div>
 
-            <p>Select Location</p>
-            <select name="locations" id="locations">
-                <option value="0">Select</option>
-                <option value="1">Location 1</option>
-                <option value="2">Location 2</option>
-                <option value="3">Location 3</option>
-                <option value="4">Location 4</option>
-            </select>
-
-            <p>Cuisine</p>
-            <div>
-                <input type="checkbox" name="checkbox1" value="1">
-                <label for="checkbox1">North Indian</label>
-            </div>
-            <div>
-                <input type="checkbox" name="checkbox2" value="2">
-                <label for="checkbox2">South Indian</label>
-            </div>
-            <div>
-                <input type="checkbox" name="checkbox3" value="3">
-                <label for="checkbox3">Chinese</label>
-            </div>
-            <div>
-                <input type="checkbox" name="checkbox4" value="4">
-                <label for="checkbox4">Fast Food</label>
-            </div>
-            <div>
-                <input type="checkbox" name="checkbox5" value="5">
-                <label for="checkbox5">Street Food</label>
-            </div>
-
-            <p>Cost For Two</p>
-            <div>
-                <input type="radio" name="radio1" value="1">
-                <label for="radio1">Less than ₹ 500</label>
-            </div>
-            <div>
-                <input type="radio" name="radio2" value="2">
-                <label for="radio2">₹ 500 to ₹ 1000</label>
-            </div><div>
-                <input type="radio" name="radio3" value="3">
-                <label for="radio3">₹ 1000 to ₹ 1500</label>
-            </div><div>
-                <input type="radio" name="radio4" value="4">
-                <label for="radio4">₹ 1500 to ₹ 2000</label>
-            </div>
-            <div>
-                <input type="radio" name="radio5" value="5">
-                <label for="radio5">₹ 2000+</label>
-            </div>
-            <p>Sort</p>
-            <div>
-                <input type="radio" name="radio6" value="6">
-                <label for="radio6">Price Low to High</label>
-            </div>
-            <div>
-                <input type="radio" name="radio7" value="7">
-                <label for="radio7">Price High to Low</label>
-            </div>
-
-        </section>
-        <section class="right-section">
-
-        </section>
-    </div>
     
+    <div class="page-block">
+<!--------------------------------------Left Section------------------------------------------------------------->
+        <div class="left-section">
+    
+            <div class="left-title page-title">Filters</div>
+    
+            <div class="left-title">Select Location</div>
+            <select class="select-menu">
+                <option>Select</option>
+                <option>Delhi</option>
+            </select>
+    
+            <div>
+                <div class="left-title">Cuisine</div> 
+                <div><input type="checkbox" name="cuisine-checkbox">North Indian</div>
+                <div><input type="checkbox" name="cuisine-checkbox">South Indian</div>
+                <div><input type="checkbox" name="cuisine-checkbox">Chineese</div>
+                <div><input type="checkbox" name="cuisine-checkbox">Fast Food</div>
+                <div><input type="checkbox" name="cuisine-checkbox">Street Food</div>
+            </div>
+            
+            <div>
+                <div class="left-title">Cost For Two</div> 
+                <div><input type="radio" name="cost-radio">Less than ₹ 500</div>
+                <div><input type="radio" name="cost-radio">₹ 500 to ₹ 1000</div>
+                <div><input type="radio" name="cost-radio">₹ 1000 to ₹ 1500</div>
+                <div><input type="radio" name="cost-radio">₹ 1500 to ₹ 2000</div>
+                <div><input type="radio" name="cost-radio">₹ 2000+</div>
+            </div>
+            
+            <div>
+                <div class="left-title">Sort</div>
+                <div><input type="radio" name="sort-radio">Price low to high</div>
+                <div><input type="radio" name="sort-radio">Price high to low</div>
+            </div>
+        </div>
+<!------------------------------------------Right Section--------------------------------------------------------->
+        <div class="right-section">
+            <div class="block item-one">
+               <div class="upper-part"> 
+                    <div class="image-box">
+                        <img src="./Images/breakfast.jpg" class="display-image"/>
+                    </div>
+                    <div >
+                        <div class="display-items item-title">The Big Chill Cakery</div> 
+                        <div class="display-items item-location">FORT</div>
+                        <div class="display-items item-address">Shop 1, Plot D, Samruddhi Complex, Chincholi</div>
+                    </div>
+                </div>
+                <hr class="ruler">
+                <div class="lower-part">
+                    <div>CUISINES : Bakery</div>
+                    <div>COST FOR TWO : ₹ 700</div>
+                </div>
+            </div>
+
+            <div class="block item-two">
+                <div class="upper-part"> 
+                    <div class="image-box">
+                        <img src="./Images/breakfast.jpg" class="display-image"/>
+                    </div>
+                    <div >
+                        <div class="display-items item-title">The Big Chill Cakery</div> 
+                        <div class="display-items item-location">FORT</div>
+                        <div class="display-items item-address">Shop 1, Plot D, Samruddhi Complex, Chincholi</div>
+                    </div>
+                </div>
+                <hr class="ruler">
+                <div class="lower-part">
+                    <div>CUISINES : Bakery</div>
+                    <div>COST FOR TWO : ₹ 700</div>
+                </div> 
+            </div>     
+            <div class="pagination">
+                    <a href="#top">&laquo;</a>
+                    <a href="#top">1</a>
+                    <a href="#top">2</a>
+                    <a href="#top">3</a>
+                    <a href="#top">4</a>
+                    <a href="#top">5</a>
+                    <a href="#top">6</a>
+                    <a href="#top">&raquo;</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
